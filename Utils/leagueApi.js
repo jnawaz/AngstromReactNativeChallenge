@@ -11,6 +11,7 @@ export async function getLeagues(setLeagues) {
 
     catch {
         console.error(error);
+        return [];
     }
 
 }
@@ -28,6 +29,7 @@ export async function getLeague(leagueId) {
 
     catch {
         console.error(error);
+        return [];
     }
 
 }
