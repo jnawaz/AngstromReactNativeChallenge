@@ -13,10 +13,10 @@ import { getLeagues } from './Utils/leagueApi';
 
 function HomeScreen() {
 
-  const [leagues, setLeagues] = useState<any[]>([]);
+  const [leagues, setLeagues] = useState([]);
 
   useEffect(() => {
-   getLeagues(setLeagues);
+   setLeagues(getLeagues());
 
   }, []);
 
